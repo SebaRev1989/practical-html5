@@ -47,39 +47,42 @@
         <div>
           <p>
             <label for="firstNameInput" class="textlabel">First Name</label>
-            <input type="text" class="textinput" id="firstNameInput" name="FirstName" autofocus="autofocus">
+            <input type="text" class="textinput" id="firstNameInput" name="FirstName" autofocus="autofocus"
+              maxlength="30" required="required" placeholder="Enter your first name">
           </p>
           <p>
             <label for="lastNameInput" class="textlabel">Last Name</label>
-            <input type="text" class="textinput" id="lastNameInput" name="LastName" size="10">
+            <input type="text" class="textinput" id="lastNameInput" name="LastName" size="10"
+              maxlength="50" required="required">
           </p>
           <p>
             <label for="emailInput" class="textlabel">Email</label>
-            <input type="email" class="textinput" id="lastNameInput" name="Email">
+            <input type="email" class="textinput" id="lastNameInput" name="Email" required="required">
           </p>
           <p>
             <label for="streetInput" class="textlabel">Street</label>
-            <input type="text" class="textinput" id="streetInput" name="Street">
+            <input type="text" class="textinput" id="streetInput" name="Street" required="required">
           </p>
           <p>
             <label for="numberInput" class="textlabel">Number</label>
-            <input type="text" class="textinput" id="numberInput" name="Number">
+            <input type="text" class="textinput" id="numberInput" name="Number" required="required">
           </p>
           <p>
             <label for="zipInput" class="textlabel">ZIP Code</label>
-            <input type="text" class="textinput" id="zipInput" name="Zip">
+            <input type="text" class="textinput" id="zipInput" name="Zip" required="required">
           </p>
           <p>
             <label for="cityInput" class="textlabel">City</label>
-            <input type="text" class="textinput" id="cityInput" name="City">
+            <input type="text" class="textinput" id="cityInput" name="City" required="required">
           </p>
           <p>
             <label for="countryInput" class="textlabel">Country</label>
-            <input type="text" class="textinput" id="countryInput" name="Country">
+            <input type="text" class="textinput" id="countryInput" name="Country"
+              pattern="[a-za-z]{3}" required="required">
           </p>
           <p>
             <label for="phoneInput" class="textlabel">Phone Number</label>
-            <input type="text" class="textinput" id="phoneInput" name="PhoneNumber">
+            <input type="text" class="textinput" id="phoneInput" name="PhoneNumber" required="required">
           </p>
           <p>
             <label for="blogInput" class="textlabel">Blog</label>
@@ -105,7 +108,8 @@
           </p>
           <p>
             <label class="textlabel" for="bowInput">How many bows on the package?</label>
-            <input id="bowInput" name="Bows" type="number" class="textinput"/>
+            <input id="bowInput" name="Bows" type="number" class="textinput" min="1" max="10"
+              placeholder="Enter a value between 1 and 10"/>
           </p>
         </div>
       </fieldset>
